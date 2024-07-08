@@ -1,0 +1,57 @@
+We have a user who is looking for a personalized diet plan. Here is some information about the user:
+
+- Gender: {user_gender}
+- Age range: {user_age_range}
+- Lifestyle: {user_lifestyle}
+- Marital status: {user_marital_status}
+- Number of kids: {user_number_of_kids}
+- Kids age ranges: {user_kids_age_ranges}
+- Food allergies or intolerances: {user_allergies}
+- Preferred cuisine: {user_preferred_cuisine}
+- Preferred sources of protein: {user_preferred_protein}
+- Preferred sources of fat: {user_preferred_fat}
+- Preferred sources of carbohydrates: {user_preferred_carbs}
+- Specific diet they are following: {user_specific_diet}
+- Main goal with their diet: {user_diet_goal}
+- Number of meals per day: {user_meals_per_day}
+- Time available for meal preparation: {user_time_for_cook}
+- Other dietary restrictions or specific food preferences: {user_dietary_restrictions}
+
+The diet plan must respect the following rules:
+- No artificial sugar
+- Limited salt
+
+Depending on the user's answers, the proposed meal plan will either follow:
+- An intermittent fasting diet
+- A reduced portion diet
+- A diet that reduces the number of times the user eats in a day
+
+All diets will promote eating early and going to bed early.
+
+Please provide 3 breakfast ideas, 3 lunch ideas, 3 dinner ideas, and 3 healthy snack ideas for this user, keeping all these considerations in mind.
+
+Use the format bellow to generate your answer:
+```
+{
+  "breakfast_ideas": [
+    "{breakfast_idea_1}",
+    "{breakfast_idea_2}",
+    "{breakfast_idea_3}"
+  ],
+  "lunch_ideas": [
+    "{lunch_idea_1}",
+    "{lunch_idea_2}",
+    "{lunch_idea_3}"
+  ],
+  "dinner_ideas": [
+    "{dinner_idea_1}",
+    "{dinner_idea_2}",
+    "{dinner_idea_3}"
+  ],
+  "snack_ideas": [
+    "{snack_idea_1}",
+    "{snack_idea_2}",
+    "{snack_idea_3}"
+  ]
+}
+```
